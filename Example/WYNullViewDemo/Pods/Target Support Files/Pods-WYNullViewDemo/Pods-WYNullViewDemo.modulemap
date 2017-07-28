@@ -1,0 +1,6 @@
+framework module Pods_WYNullViewDemo {
+  umbrella header "Pods-WYNullViewDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
