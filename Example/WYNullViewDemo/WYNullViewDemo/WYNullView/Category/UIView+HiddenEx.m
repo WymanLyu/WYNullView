@@ -8,6 +8,7 @@
 
 #import "UIView+HiddenEx.h"
 #import <objc/runtime.h>
+#import "NSBundle+WY.h"
 
 @implementation UIView (HiddenEx)
 
@@ -79,8 +80,7 @@ static const void *wy_objWhitelistValueKey = &wy_objWhitelistValueKey;
 
 #pragma mark - 私有方法
 - (NSMutableArray *)_loadWhitePlist {
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"ClassWhitelist" ofType:@"plist"];
-    return [[NSMutableArray alloc] initWithContentsOfFile:plistPath];
+    return [NSBundle wy_classWhitelistArrayM];
 }
 
 - (BOOL)_isInClasswhitelist:(id)obj {

@@ -7,6 +7,7 @@
 //
 
 #import "NullView.h"
+#import "NSBundle+WY.h"
 
 @interface NullView ()
 
@@ -23,7 +24,7 @@
         
         // 0.图标
         UIImageView *iconView = [[UIImageView alloc] init];
-        iconView.image = [UIImage imageNamed:@"null_img"];
+        iconView.image = [NSBundle wy_nullViewImage];
         [self addSubview:iconView];
         _iconView = iconView;
         

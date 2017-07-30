@@ -18,14 +18,15 @@
 		F510D8721F2ADA6000B4B4D4 /* WYNullViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F510D8711F2ADA6000B4B4D4 /* WYNullViewDemoTests.m */; };
 		F510D87D1F2ADA6000B4B4D4 /* WYNullViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F510D87C1F2ADA6000B4B4D4 /* WYNullViewDemoUITests.m */; };
 		F510D88C1F2ADFF800B4B4D4 /* NSString+TextHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = F510D88B1F2ADFF800B4B4D4 /* NSString+TextHeight.m */; };
-		F510D8941F2B0E4D00B4B4D4 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F510D88F1F2B0E4D00B4B4D4 /* LoadingView.m */; };
-		F510D8951F2B0E4D00B4B4D4 /* NullView.m in Sources */ = {isa = PBXBuildFile; fileRef = F510D8911F2B0E4D00B4B4D4 /* NullView.m */; };
-		F510D8961F2B0E4D00B4B4D4 /* UIView+WY.m in Sources */ = {isa = PBXBuildFile; fileRef = F510D8931F2B0E4D00B4B4D4 /* UIView+WY.m */; };
-		F510D8991F2B175300B4B4D4 /* UIView+HiddenEx.m in Sources */ = {isa = PBXBuildFile; fileRef = F510D8981F2B175300B4B4D4 /* UIView+HiddenEx.m */; };
-		F510D89B1F2B1A5200B4B4D4 /* ClassWhitelist.plist in Resources */ = {isa = PBXBuildFile; fileRef = F510D89A1F2B1A5200B4B4D4 /* ClassWhitelist.plist */; };
-		F510D89E1F2B216500B4B4D4 /* WYWeakObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F510D89D1F2B216500B4B4D4 /* WYWeakObject.m */; };
-		F510D8A11F2B2EA200B4B4D4 /* GlobleNullViewRef.m in Sources */ = {isa = PBXBuildFile; fileRef = F510D8A01F2B2EA200B4B4D4 /* GlobleNullViewRef.m */; };
 		F517D0401F2B45AC00228BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F517D03F1F2B45AC00228BBF /* Assets.xcassets */; };
+		F517D0451F2E191D00228BBF /* WYNullView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F517D0441F2E191D00228BBF /* WYNullView.bundle */; };
+		F517D05F1F2E214200228BBF /* NSBundle+WY.m in Sources */ = {isa = PBXBuildFile; fileRef = F517D0501F2E214200228BBF /* NSBundle+WY.m */; };
+		F517D0601F2E214200228BBF /* UIView+HiddenEx.m in Sources */ = {isa = PBXBuildFile; fileRef = F517D0521F2E214200228BBF /* UIView+HiddenEx.m */; };
+		F517D0611F2E214200228BBF /* UIView+WY.m in Sources */ = {isa = PBXBuildFile; fileRef = F517D0541F2E214200228BBF /* UIView+WY.m */; };
+		F517D0621F2E214200228BBF /* GlobleNullViewRef.m in Sources */ = {isa = PBXBuildFile; fileRef = F517D0571F2E214200228BBF /* GlobleNullViewRef.m */; };
+		F517D0631F2E214200228BBF /* WYWeakObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F517D0591F2E214200228BBF /* WYWeakObject.m */; };
+		F517D0641F2E214200228BBF /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F517D05C1F2E214200228BBF /* LoadingView.m */; };
+		F517D0651F2E214200228BBF /* NullView.m in Sources */ = {isa = PBXBuildFile; fileRef = F517D05E1F2E214200228BBF /* NullView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,20 +73,23 @@
 		F510D87E1F2ADA6000B4B4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F510D88A1F2ADFF800B4B4D4 /* NSString+TextHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextHeight.h"; sourceTree = "<group>"; };
 		F510D88B1F2ADFF800B4B4D4 /* NSString+TextHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextHeight.m"; sourceTree = "<group>"; };
-		F510D88E1F2B0E4D00B4B4D4 /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
-		F510D88F1F2B0E4D00B4B4D4 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
-		F510D8901F2B0E4D00B4B4D4 /* NullView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NullView.h; sourceTree = "<group>"; };
-		F510D8911F2B0E4D00B4B4D4 /* NullView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullView.m; sourceTree = "<group>"; };
-		F510D8921F2B0E4D00B4B4D4 /* UIView+WY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WY.h"; sourceTree = "<group>"; };
-		F510D8931F2B0E4D00B4B4D4 /* UIView+WY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WY.m"; sourceTree = "<group>"; };
-		F510D8971F2B175300B4B4D4 /* UIView+HiddenEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HiddenEx.h"; sourceTree = "<group>"; };
-		F510D8981F2B175300B4B4D4 /* UIView+HiddenEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HiddenEx.m"; sourceTree = "<group>"; };
-		F510D89A1F2B1A5200B4B4D4 /* ClassWhitelist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ClassWhitelist.plist; sourceTree = "<group>"; };
-		F510D89C1F2B216500B4B4D4 /* WYWeakObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYWeakObject.h; sourceTree = "<group>"; };
-		F510D89D1F2B216500B4B4D4 /* WYWeakObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYWeakObject.m; sourceTree = "<group>"; };
-		F510D89F1F2B2EA200B4B4D4 /* GlobleNullViewRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobleNullViewRef.h; sourceTree = "<group>"; };
-		F510D8A01F2B2EA200B4B4D4 /* GlobleNullViewRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobleNullViewRef.m; sourceTree = "<group>"; };
 		F517D03F1F2B45AC00228BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F517D0441F2E191D00228BBF /* WYNullView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WYNullView.bundle; sourceTree = "<group>"; };
+		F517D04F1F2E214200228BBF /* NSBundle+WY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+WY.h"; sourceTree = "<group>"; };
+		F517D0501F2E214200228BBF /* NSBundle+WY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+WY.m"; sourceTree = "<group>"; };
+		F517D0511F2E214200228BBF /* UIView+HiddenEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HiddenEx.h"; sourceTree = "<group>"; };
+		F517D0521F2E214200228BBF /* UIView+HiddenEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HiddenEx.m"; sourceTree = "<group>"; };
+		F517D0531F2E214200228BBF /* UIView+WY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WY.h"; sourceTree = "<group>"; };
+		F517D0541F2E214200228BBF /* UIView+WY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WY.m"; sourceTree = "<group>"; };
+		F517D0561F2E214200228BBF /* GlobleNullViewRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobleNullViewRef.h; sourceTree = "<group>"; };
+		F517D0571F2E214200228BBF /* GlobleNullViewRef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobleNullViewRef.m; sourceTree = "<group>"; };
+		F517D0581F2E214200228BBF /* WYWeakObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYWeakObject.h; sourceTree = "<group>"; };
+		F517D0591F2E214200228BBF /* WYWeakObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYWeakObject.m; sourceTree = "<group>"; };
+		F517D05B1F2E214200228BBF /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		F517D05C1F2E214200228BBF /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		F517D05D1F2E214200228BBF /* NullView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NullView.h; sourceTree = "<group>"; };
+		F517D05E1F2E214200228BBF /* NullView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullView.m; sourceTree = "<group>"; };
+		F517D0661F2E21AD00228BBF /* WYNullView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYNullView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,21 +213,48 @@
 		F510D88D1F2B0E4D00B4B4D4 /* WYNullView */ = {
 			isa = PBXGroup;
 			children = (
-				F510D89C1F2B216500B4B4D4 /* WYWeakObject.h */,
-				F510D89D1F2B216500B4B4D4 /* WYWeakObject.m */,
-				F510D88E1F2B0E4D00B4B4D4 /* LoadingView.h */,
-				F510D88F1F2B0E4D00B4B4D4 /* LoadingView.m */,
-				F510D8901F2B0E4D00B4B4D4 /* NullView.h */,
-				F510D8911F2B0E4D00B4B4D4 /* NullView.m */,
-				F510D8921F2B0E4D00B4B4D4 /* UIView+WY.h */,
-				F510D8931F2B0E4D00B4B4D4 /* UIView+WY.m */,
-				F510D8971F2B175300B4B4D4 /* UIView+HiddenEx.h */,
-				F510D8981F2B175300B4B4D4 /* UIView+HiddenEx.m */,
-				F510D89A1F2B1A5200B4B4D4 /* ClassWhitelist.plist */,
-				F510D89F1F2B2EA200B4B4D4 /* GlobleNullViewRef.h */,
-				F510D8A01F2B2EA200B4B4D4 /* GlobleNullViewRef.m */,
+				F517D04E1F2E214200228BBF /* Category */,
+				F517D0551F2E214200228BBF /* Tool */,
+				F517D05A1F2E214200228BBF /* View */,
+				F517D0441F2E191D00228BBF /* WYNullView.bundle */,
+				F517D0661F2E21AD00228BBF /* WYNullView.h */,
 			);
 			path = WYNullView;
+			sourceTree = "<group>";
+		};
+		F517D04E1F2E214200228BBF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F517D04F1F2E214200228BBF /* NSBundle+WY.h */,
+				F517D0501F2E214200228BBF /* NSBundle+WY.m */,
+				F517D0511F2E214200228BBF /* UIView+HiddenEx.h */,
+				F517D0521F2E214200228BBF /* UIView+HiddenEx.m */,
+				F517D0531F2E214200228BBF /* UIView+WY.h */,
+				F517D0541F2E214200228BBF /* UIView+WY.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F517D0551F2E214200228BBF /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				F517D0561F2E214200228BBF /* GlobleNullViewRef.h */,
+				F517D0571F2E214200228BBF /* GlobleNullViewRef.m */,
+				F517D0581F2E214200228BBF /* WYWeakObject.h */,
+				F517D0591F2E214200228BBF /* WYWeakObject.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		F517D05A1F2E214200228BBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F517D05B1F2E214200228BBF /* LoadingView.h */,
+				F517D05C1F2E214200228BBF /* LoadingView.m */,
+				F517D05D1F2E214200228BBF /* NullView.h */,
+				F517D05E1F2E214200228BBF /* NullView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,8 +376,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F510D8671F2ADA6000B4B4D4 /* LaunchScreen.storyboard in Resources */,
-				F510D89B1F2B1A5200B4B4D4 /* ClassWhitelist.plist in Resources */,
 				F517D0401F2B45AC00228BBF /* Assets.xcassets in Resources */,
+				F517D0451F2E191D00228BBF /* WYNullView.bundle in Resources */,
 				F510D8621F2ADA6000B4B4D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,15 +542,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F510D85F1F2ADA6000B4B4D4 /* ViewController.m in Sources */,
-				F510D8991F2B175300B4B4D4 /* UIView+HiddenEx.m in Sources */,
-				F510D8941F2B0E4D00B4B4D4 /* LoadingView.m in Sources */,
-				F510D8961F2B0E4D00B4B4D4 /* UIView+WY.m in Sources */,
-				F510D8A11F2B2EA200B4B4D4 /* GlobleNullViewRef.m in Sources */,
+				F517D0641F2E214200228BBF /* LoadingView.m in Sources */,
+				F517D0611F2E214200228BBF /* UIView+WY.m in Sources */,
+				F517D05F1F2E214200228BBF /* NSBundle+WY.m in Sources */,
+				F517D0631F2E214200228BBF /* WYWeakObject.m in Sources */,
 				F510D88C1F2ADFF800B4B4D4 /* NSString+TextHeight.m in Sources */,
+				F517D0621F2E214200228BBF /* GlobleNullViewRef.m in Sources */,
 				F510D85C1F2ADA6000B4B4D4 /* AppDelegate.m in Sources */,
-				F510D89E1F2B216500B4B4D4 /* WYWeakObject.m in Sources */,
 				F510D8591F2ADA6000B4B4D4 /* main.m in Sources */,
-				F510D8951F2B0E4D00B4B4D4 /* NullView.m in Sources */,
+				F517D0601F2E214200228BBF /* UIView+HiddenEx.m in Sources */,
+				F517D0651F2E214200228BBF /* NullView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

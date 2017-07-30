@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "MJRefresh.h"
 #import "NSString+TextHeight.h"
-#import "UIView+WY.h"
+#import "WYNullView.h"
 
 //
 // 可以打开以下宏测试NullView，显示不同的操作逻辑：
