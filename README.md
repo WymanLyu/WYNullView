@@ -3,7 +3,7 @@ An easy way to use when view' content is empty
 
 # Overview
 
-![](https://github.com/WymanLyu/WYSlideView/blob/master/Images/%E8%87%AA%E9%80%82%E5%BA%94.gif)
+![](https://github.com/WymanLyu/WYNullView/blob/master/WYNullView/Images/nullTest.gif)
 
 # How to use
 
@@ -14,28 +14,28 @@ An easy way to use when view' content is empty
 * On the empty state show default content, then all you have to do is:
 
 ```objc
- 		if (showNullView) { // 无数据，empty data -》 show nullview
-            [self.tableView wy_showNullView];
-        } else { // 有数据，data -》 hide nullview
-             [self.tableView wy_hideNullView];
-        }
+if (showNullView) { // 无数据，empty data -》 show nullview
+	[self.tableView wy_showNullView];
+} else { // 有数据，data -》 hide nullview
+	[self.tableView wy_hideNullView];
+}
 ```
 
 * You will be able to fully customize the content and appearance of the empty states for your application:
 
 ```objc
-		 if (showNullView) { // 无数据，empty data -》 show nullview
-            [self.tableView wy_showNullView:^UIView *(NullView *defaultNullView) {
-            	// you can do any constom operation in this block, even return a new constom UIView obj 
-            	// rerurn [UIView new];
-                defaultNullView.desText = @"基于NullView自定义";
-                defaultNullView.frame = CGRectMake(10, 10, defaultNullView.frame.size.width, defaultNullView.frame.size.height);
-                defaultNullView.backgroundColor = [UIColor cyanColor];
-                return defaultNullView;
-            } heightOffset:0.0];
-        } else { // 有数据，data -》 hide nullview
-            [self.tableView wy_hideNullView];
-        }
+if (showNullView) { // 无数据，empty data -》 show nullview
+	[self.tableView wy_showNullView:^UIView *(NullView *defaultNullView) {
+		// you can do any constom operation in this block, even return a new constom UIView obj 
+		// rerurn [UIView new];
+		defaultNullView.desText = @"基于NullView自定义";
+		defaultNullView.frame = CGRectMake(10, 10, 		defaultNullView.frame.size.width, 			defaultNullView.frame.size.height);
+		defaultNullView.backgroundColor = [UIColor cyanColor];
+		return defaultNullView;
+	} heightOffset:0.0];
+} else { // 有数据，data -》 hide nullview
+	[self.tableView wy_hideNullView];
+}
 
 ```
 
@@ -44,8 +44,8 @@ An easy way to use when view' content is empty
 * UIView-Category add AssociatedObject "wy_nullView":
 
 ```objc
-	///> 空视图
-	@property (nonatomic, strong) UIView *wy_nullView;
+///> 空视图
+@property (nonatomic, strong) UIView *wy_nullView;
 
 ```
 
@@ -65,7 +65,7 @@ typedef UIView *(^NullViewHandle)(NullView *defaultNullView);
 
 	* Global configuration 【View object whatever it is type, show the same content from "wy_configGlobleNullView" nullViewHandle return 】:
 
-		```Objc
+	```Objc
  	[UIView wy_configGlobleNullView:^UIView *(NullView *defaultNullView) {
         // return globalNullView...
     }];
@@ -74,43 +74,42 @@ typedef UIView *(^NullViewHandle)(NullView *defaultNullView);
 	* View configuration【Once config, you can call "wy_showNullView" directly, 】
 
 		
-		```Objc
-		- (void)viewDidLoad {
-			 [mView wy_configNullView:^UIView *(NullView *defaultNullView) {
-        		// return nullView...
-    		}];
-		}
-		
-		- (void)func1 {
-			...
-			[mView wy_showNullView];
-			...
-		}
-    	- (void)func1 {
-    		...
-			[mView wy_showNullView];
-			...
-    	}
-   ```
+	```Objc
+	- (void)viewDidLoad {
+		[mView wy_configNullView:^UIView *(NullView *defaultNullView) {
+        	// return nullView...
+    	}];
+	}
+	- (void)func1 {
+		...
+		[mView wy_showNullView];
+		...
+	}
+    - (void)func1 {
+    	...
+	[mView wy_showNullView];
+		...
+    }
+	```
    
 	* If you have plenty of time, you can do the following【Equivalent to the above】:
 	
-		```Objc
+	```Objc
 			
-		- (void)func1 {
-			...
-			[mView wy_showNullView:^UIView *(NullView *defaultNullView) {
-                // return nullView...
-            } heightOffset:0.0]];
-			...
-		}
-    	- (void)func1 {
-    		...
-			[mView wy_showNullView:^UIView *(NullView *defaultNullView) {
-                // return nullView...
-            } heightOffset:0.0]];
-			...
-    	}
+	- (void)func1 {
+		...
+		[mView wy_showNullView:^UIView *(NullView *defaultNullView) {
+        	// return nullView...
+        } heightOffset:0.0]];
+		...
+	}
+    - (void)func1 {
+    	...
+		[mView wy_showNullView:^UIView *(NullView *defaultNullView) {
+            // return nullView...
+        } heightOffset:0.0]];
+		...
+    }
    ```
    
 * Control special subView show/hidden 
