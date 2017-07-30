@@ -15,9 +15,9 @@ An easy way to use when view' content is empty
 
 ```objc
 if (showNullView) { // 无数据，empty data -》 show nullview
-	[self.tableView wy_showNullView];
+  [self.tableView wy_showNullView];
 } else { // 有数据，data -》 hide nullview
-	[self.tableView wy_hideNullView];
+  [self.tableView wy_hideNullView];
 }
 ```
 
@@ -25,16 +25,16 @@ if (showNullView) { // 无数据，empty data -》 show nullview
 
 ```objc
 if (showNullView) { // 无数据，empty data -》 show nullview
-	[self.tableView wy_showNullView:^UIView *(NullView *defaultNullView) {
-		// you can do any constom operation in this block, even return a new constom UIView obj 
-		// rerurn [UIView new];
-		defaultNullView.desText = @"基于NullView自定义";
-		defaultNullView.frame = CGRectMake(10, 10, 		defaultNullView.frame.size.width, 			defaultNullView.frame.size.height);
-		defaultNullView.backgroundColor = [UIColor cyanColor];
-		return defaultNullView;
-	} heightOffset:0.0];
+  [self.tableView wy_showNullView:^UIView *(NullView *defaultNullView) {
+     // you can do any constom operation in this block, even return a new constom UIView obj 
+	 // rerurn [UIView new];
+	 defaultNullView.desText = @"基于NullView自定义";
+	 defaultNullView.frame = CGRectMake(10, 10, 		defaultNullView.frame.size.width, 			defaultNullView.frame.size.height);
+	 defaultNullView.backgroundColor = [UIColor cyanColor];
+	 return defaultNullView;
+  } heightOffset:0.0];
 } else { // 有数据，data -》 hide nullview
-	[self.tableView wy_hideNullView];
+  [self.tableView wy_hideNullView];
 }
 
 ```
@@ -67,7 +67,7 @@ typedef UIView *(^NullViewHandle)(NullView *defaultNullView);
 
 	```Objc
  	[UIView wy_configGlobleNullView:^UIView *(NullView *defaultNullView) {
-        // return globalNullView...
+       // return globalNullView...
     }];
 	```  
 	
@@ -76,19 +76,19 @@ typedef UIView *(^NullViewHandle)(NullView *defaultNullView);
 		
 	```Objc
 	- (void)viewDidLoad {
-		[mView wy_configNullView:^UIView *(NullView *defaultNullView) {
-        	// return nullView...
-    	}];
+	  [mView wy_configNullView:^UIView *(NullView *defaultNullView) {
+         // return nullView...
+      }];
 	}
 	- (void)func1 {
-		...
-		[mView wy_showNullView];
-		...
+	  ...
+	  [mView wy_showNullView];
+	  ...
 	}
     - (void)func1 {
-    	...
-	[mView wy_showNullView];
-		...
+      ...
+	  [mView wy_showNullView];
+	  ...
     }
 	```
    
@@ -97,18 +97,18 @@ typedef UIView *(^NullViewHandle)(NullView *defaultNullView);
 	```Objc
 			
 	- (void)func1 {
-		...
-		[mView wy_showNullView:^UIView *(NullView *defaultNullView) {
-        	// return nullView...
-        } heightOffset:0.0]];
-		...
+	  ...
+	  [mView wy_showNullView:^UIView *(NullView *defaultNullView) {
+         // return nullView...
+      } heightOffset:0.0]];
+	  ...
 	}
     - (void)func1 {
-    	...
-		[mView wy_showNullView:^UIView *(NullView *defaultNullView) {
-            // return nullView...
-        } heightOffset:0.0]];
-		...
+      ...
+	  [mView wy_showNullView:^UIView *(NullView *defaultNullView) {
+        // return nullView...
+       } heightOffset:0.0]];
+	  ...
     }
    ```
    
@@ -129,3 +129,9 @@ typedef UIView *(^NullViewHandle)(NullView *defaultNullView);
  	// add class_whitelist
  	[[self.tableView wy_classWhitelist] addObject:makeWeakReference([mView_subView class])];
 	```
+
+* Hope:
+If you think it's useful, star to me, Free to share with ideas, issue or pull requests
+
+* License
+MIT
