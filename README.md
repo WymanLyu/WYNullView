@@ -51,9 +51,9 @@ if (showNullView) { // 无数据，empty data -》 show nullview
 
 * Looking for NullView chain:
 
-	* + (void)wy_configGlobleNullView:(NullViewHandle)nullViewHandle
-	* - (void)wy_configNullView:(NullViewHandle)nullViewHandle
-	* - (void)wy_showNullView:(NullViewHandle)nullViewHandle heightOffset:(CGFloat)offset
+	* \+ (void)wy_configGlobleNullView:(NullViewHandle)nullViewHandle
+	* \- (void)wy_configNullView:(NullViewHandle)nullViewHandle
+	* \- (void)wy_showNullView:(NullViewHandle)nullViewHandle heightOffset:(CGFloat)offset
 
 * NullViewHandle Type:
 
