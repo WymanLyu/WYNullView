@@ -1,4 +1,5 @@
 # WYNullView
+
 An easy way to use when view' content is empty
 
 # Overview
@@ -21,7 +22,7 @@ if (showNullView) { // 无数据，empty data -》 show nullview
 }
 ```
 
-* You will be able to fully customize the content and appearance of the empty states for your application:
+* You will be able to fully customize the content and appearance of the empty states for your application
 
 ```objc
 if (showNullView) { // 无数据，empty data -》 show nullview
@@ -130,8 +131,10 @@ typedef UIView *(^NullViewHandle)(NullView *defaultNullView);
  	[[self.tableView wy_classWhitelist] addObject:makeWeakReference([mView_subView class])];
 	```
 
-* Hope:
+* Hope
+
 If you think it's useful, star to me, Free to share with ideas, issue or pull requests
 
 * License
+
 MIT
