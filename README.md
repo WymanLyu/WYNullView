@@ -131,10 +131,10 @@ typedef UIView *(^NullViewHandle)(NullView *defaultNullView);
  	[[self.tableView wy_classWhitelist] addObject:makeWeakReference([mView_subView class])];
 	```
 
-* Hope
+# Hope
 
 If you think it's useful, star to me, Free to share with ideas, issue or pull requests
 
-* License
+# License
 
 MIT
