@@ -1,0 +1,6 @@
+framework module WYNullView {
+  umbrella header "WYNullView-umbrella.h"
+
+  export *
+  module * { export * }
+}

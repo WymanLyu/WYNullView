@@ -1,0 +1,26 @@
+{
+  "name": "WYNullView",
+  "version": "0.0.1",
+  "summary": "An easy way to use when view' content is empty",
+  "description": "This lib has been designed in a way where you won't need to extend UIView class. You will be able to fully customize the content and appearance of the empty states for your application",
+  "homepage": "https://github.com/WymanLyu/WYNullView",
+  "license": "MIT",
+  "authors": {
+    "wyman": "wyman.lyu@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/WymanLyu/WYNullView.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "WYNullView",
+    "WYNullView/**/*.{h,m}"
+  ],
+  "resources": "WYNullView/WYNullView.bundle",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}

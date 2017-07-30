@@ -1,12 +1,19 @@
 PODS:
   - MJRefresh (3.1.12)
+  - WYNullView (0.0.1)
 
 DEPENDENCIES:
   - MJRefresh (~> 3.1.1)
+  - WYNullView (from `../../`)
+
+EXTERNAL SOURCES:
+  WYNullView:
+    :path: ../../
 
 SPEC CHECKSUMS:
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  WYNullView: 1f4477a7a5a90f8f6fe421b6d2c3747068048bb2
 
-PODFILE CHECKSUM: 65d927049bab35cd1970fec3c44b8f21a1770114
+PODFILE CHECKSUM: 687436f630ad2a20db75b6186bcdb8d9c669aba6
 
 COCOAPODS: 1.2.0.beta.1
