@@ -28,11 +28,11 @@ if (showNullView) { // 无数据，empty data -》 show nullview
 if (showNullView) { // 无数据，empty data -》 show nullview
   [self.tableView wy_showNullView:^UIView *(NullView *defaultNullView) {
      // you can do any constom operation in this block, even return a new constom UIView obj 
-	 // rerurn [UIView new];
-	 defaultNullView.desText = @"基于NullView自定义";
-	 defaultNullView.frame = CGRectMake(10, 10, 		defaultNullView.frame.size.width, 			defaultNullView.frame.size.height);
-	 defaultNullView.backgroundColor = [UIColor cyanColor];
-	 return defaultNullView;
+     // rerurn [UIView new];
+     defaultNullView.desText = @"基于NullView自定义";
+     defaultNullView.frame = CGRectMake(10, 10, defaultNullView.frame.size.width, defaultNullView.frame.size.height);
+     defaultNullView.backgroundColor = [UIColor cyanColor];
+     return defaultNullView;
   } heightOffset:0.0];
 } else { // 有数据，data -》 hide nullview
   [self.tableView wy_hideNullView];
@@ -86,7 +86,7 @@ typedef UIView *(^NullViewHandle)(NullView *defaultNullView);
 	  [mView wy_showNullView];
 	  ...
 	}
-    - (void)func1 {
+    - (void)func2 {
       ...
 	  [mView wy_showNullView];
 	  ...
@@ -104,7 +104,7 @@ typedef UIView *(^NullViewHandle)(NullView *defaultNullView);
       } heightOffset:0.0]];
 	  ...
 	}
-    - (void)func1 {
+    - (void)func2 {
       ...
 	  [mView wy_showNullView:^UIView *(NullView *defaultNullView) {
         // return nullView...
