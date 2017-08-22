@@ -94,16 +94,16 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.subspec 'WYNullView' do |_WYNullView|
-    _WYNullView.source_files = '_WYNullView/WYNullView/Category/*'
+  s.subspec 'Category' do |category|
+    category.source_files = 'WYNullView/WYNullView/Category/*'
   end
 
-   s.subspec 'WYNullView' do |_WYNullView|
-    _WYNullView.source_files = '_WYNullView/WYNullView/Tool/*'
+   s.subspec 'Tool' do |tool|
+    tool.source_files = 'WYNullView/WYNullView/Tool/*'
   end
-  
-   s.subspec 'WYNullView' do |_WYNullView|
-    _WYNullView.source_files = '_WYNullView/WYNullView/View/*'
+
+   s.subspec 'View' do |view|
+    view.source_files = 'WYNullView/WYNullView/View/*'
   end
 
 
