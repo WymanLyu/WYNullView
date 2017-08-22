@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WYNullView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "An easy way to use when view' content is empty"
 
   # This description is used to generate tags and improve search results.
@@ -93,6 +93,16 @@ Pod::Spec.new do |s|
   # s.exclude_files = "WYNullView/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
+
+  s.subspec 'WYNullView' do |_WYNullView|
+    _WYNullView.source_files = '_WYNullView/WYNullView/Category/*'
+    _WYNullView.source_files = '_WYNullView/WYNullView/Tool/*'
+    _WYNullView.source_files = '_WYNullView/WYNullView/View/*'
+    #sb.public_header_files = '相对路径/**/*.h'
+    #sb.resource = "相对路径/**/*.{bundle,nib,xib}"
+    #sb.dependency '', '~> 1.0.0'
+  end
+
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

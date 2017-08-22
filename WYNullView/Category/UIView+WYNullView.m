@@ -6,7 +6,7 @@
 //  Copyright © 2017年 wyman. All rights reserved.
 //
 
-#import "UIView+WY.h"
+#import "UIView+WYNullView.h"
 #import <objc/runtime.h>
 #import "LoadingView.h"
 #import "GlobleNullViewRef.h"
@@ -15,7 +15,7 @@
 #define fitW(w)  (((w)/(750.0))*([UIScreen mainScreen].bounds.size.width))
 #define fitH(h)  (((h)/(1334.0))*([UIScreen mainScreen].bounds.size.height))
 
-@implementation UIView (WY)
+@implementation UIView (WYNullView)
 
 #pragma mark - 静默视图
 static const void *wy_nullViewValueKey = &wy_nullViewValueKey;

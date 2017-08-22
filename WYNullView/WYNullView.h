@@ -7,7 +7,7 @@
 //
 
 // 空视图、加载视图
-#import "UIView+WY.h"
+#import "UIView+WYNullView.h"
 #import "NullView.h"
 #import "LoadingView.h"
 
