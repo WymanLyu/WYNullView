@@ -95,15 +95,15 @@ Pod::Spec.new do |s|
   # s.public_header_files = "Classes/**/*.h"
 
   s.subspec 'Category' do |category|
-    category.source_files = 'WYNullView/WYNullView/WYNullView/Category/*'
+    category.source_files = 'WYNullView/Category/*'
   end
 
    s.subspec 'Tool' do |tool|
-    tool.source_files = 'WYNullView/WYNullView/WYNullView/Tool/*'
+    tool.source_files = 'WYNullView/Tool/*'
   end
 
    s.subspec 'View' do |view|
-    view.source_files = 'WYNullView/WYNullView/WYNullView/View/*'
+    view.source_files = 'WYNullView/View/*'
   end
 
 
