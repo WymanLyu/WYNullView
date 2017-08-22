@@ -105,11 +105,11 @@ Pod::Spec.new do |s|
     view.public_header_files = 'WYNullView/View/*.h'
     view.frameworks = 'WYNullViewView'
   end
-
   
   s.subspec 'Category' do |category|
     category.dependency 'WYNullView/WYNullViewView'
-    
+    category.dependency 'WYNullView/WYNullViewTool'
+
     category.source_files = 'WYNullView/Category/*'
     category.public_header_files = 'WYNullView/Category/*.h'
     category.frameworks = 'WYNullViewCategory'
