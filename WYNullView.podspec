@@ -89,30 +89,33 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "WYNullView", "WYNullView/**/*.{h,m}"
+  # s.source_files  = "WYNullView", "WYNullView/**/*.{h,m}"
   # s.exclude_files = "WYNullView/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
+  # s.source_files = "WYNullView/WYNullView.h"
+  s.public_header_files = "WYNullView/WYNullView.h"
+
    s.subspec 'Tool' do |tool|
-    tool.source_files = 'WYNullView/Tool/*'
+    tool.source_files = 'WYNullView/Tool/*.{h,m}'
     tool.public_header_files = 'WYNullView/Tool/*.h'
-    tool.frameworks = 'WYNullViewTool'
+    # tool.frameworks = 'WYNullViewTool'
   end
 
    s.subspec 'View' do |view|
-    view.source_files = 'WYNullView/View/*'
+    view.source_files = 'WYNullView/View/*.{h,m}'
     view.public_header_files = 'WYNullView/View/*.h'
-    view.frameworks = 'WYNullViewView'
+    # view.frameworks = 'WYNullViewView'
   end
   
   s.subspec 'Category' do |category|
-    category.dependency 'WYNullView/WYNullViewView'
-    category.dependency 'WYNullView/WYNullViewTool'
+    category.dependency 'WYNullView/View'
+    category.dependency 'WYNullView/Tool'
 
-    category.source_files = 'WYNullView/Category/*'
+    category.source_files = 'WYNullView/Category/*.{h,m}'
     category.public_header_files = 'WYNullView/Category/*.h'
-    category.frameworks = 'WYNullViewCategory'
+    # category.frameworks = 'WYNullViewCategory'
   end
 
 
