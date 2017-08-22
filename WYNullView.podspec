@@ -96,11 +96,14 @@ Pod::Spec.new do |s|
 
   s.subspec 'WYNullView' do |_WYNullView|
     _WYNullView.source_files = '_WYNullView/WYNullView/Category/*'
+  end
+
+   s.subspec 'WYNullView' do |_WYNullView|
     _WYNullView.source_files = '_WYNullView/WYNullView/Tool/*'
+  end
+  
+   s.subspec 'WYNullView' do |_WYNullView|
     _WYNullView.source_files = '_WYNullView/WYNullView/View/*'
-    #sb.public_header_files = '相对路径/**/*.h'
-    #sb.resource = "相对路径/**/*.{bundle,nib,xib}"
-    #sb.dependency '', '~> 1.0.0'
   end
 
 
