@@ -18,13 +18,6 @@
 #import "LoadingView.h"
 #import "NSBundle+WY.h"
 #import "NullView.h"
-#import "UIView+HiddenEx.h"
-#import "UIView+WYNullView.h"
-#import "GlobleNullViewRef.h"
-#import "WYWeakObject.h"
-#import "LoadingView.h"
-#import "NSBundle+WY.h"
-#import "NullView.h"
 
 FOUNDATION_EXPORT double WYNullViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char WYNullViewVersionString[];

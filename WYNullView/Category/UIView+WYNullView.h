@@ -12,7 +12,7 @@
 
 typedef UIView *(^NullViewHandle)(NullView *defaultNullView);
 
-@interface UIView (WY)
+@interface UIView (WYNullView)
 
 #pragma mark - 静默视图
 

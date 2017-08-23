@@ -1,14 +1,14 @@
 PODS:
   - MJRefresh (3.1.12)
-  - WYNullView (1.0.1):
-    - WYNullView/Category (= 1.0.1)
-    - WYNullView/Tool (= 1.0.1)
-    - WYNullView/View (= 1.0.1)
-  - WYNullView/Category (1.0.1):
+  - WYNullView (1.0.2):
+    - WYNullView/Category (= 1.0.2)
+    - WYNullView/Tool (= 1.0.2)
+    - WYNullView/View (= 1.0.2)
+  - WYNullView/Category (1.0.2):
     - WYNullView/Tool
     - WYNullView/View
-  - WYNullView/Tool (1.0.1)
-  - WYNullView/View (1.0.1)
+  - WYNullView/Tool (1.0.2)
+  - WYNullView/View (1.0.2)
 
 DEPENDENCIES:
   - MJRefresh (~> 3.1.1)
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  WYNullView: a8820e75650661a7ea0c593e5f70b64babc8fc1d
+  WYNullView: c4d1b5cac04cb3f86f0b5b8bfc40883ad3c62550
 
 PODFILE CHECKSUM: 687436f630ad2a20db75b6186bcdb8d9c669aba6
 
